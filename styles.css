@@ -1,175 +1,175 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
-  --color-primary-400: hsl(178, 100%, 50%);
-  --color-neutral-900: hsl(217, 54%, 11%);
-  --color-neutral-800: hsl(216, 50%, 16%);
-  --color-neutral-500: hsl(215, 32%, 27%);
-  --color-neutral-200: hsl(215, 51%, 70%);
-  --color-white: hsl(0, 0%, 100%);
+	--color-primary-400: hsl(178, 100%, 50%);
+	--color-neutral-900: hsl(217, 54%, 11%);
+	--color-neutral-800: hsl(216, 50%, 16%);
+	--color-neutral-500: hsl(215, 32%, 27%);
+	--color-neutral-200: hsl(215, 51%, 70%);
+	--color-white: hsl(0, 0%, 100%);
 }
 
 /* General Styles */
 
 html {
-  font-family: 'Outfit', sans-serif;
-  background: var(--color-neutral-900);
+	font-family: 'Outfit', sans-serif;
+	background: var(--color-neutral-900);
 }
 
 body {
-  font-size: 1.125rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  color: var(--color-neutral-200);
-  font-weight: 300;
-  letter-spacing: 0.025em;
+	font-size: 1.125rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-block-size: 100svh;
+	color: var(--color-neutral-200);
+	font-weight: 300;
+	letter-spacing: 0.025em;
 }
 
 .img {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
 }
 
 .image-container {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
-  margin: 0 auto;
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 0 auto;
 }
 
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(/images/icon-view.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.5s ease-in;
+.image-container .overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url(/images/icon-view.svg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity 0.5s ease-in;
 }
 
-.overlay:hover {
-  opacity: 1;
-  /* background-blend-mode: multiply; */
-  background-color: hsla(178, 100%, 50%, 0.5);
+.image-container:hover .overlay {
+	opacity: 1;
+	/* background-blend-mode: multiply; */
+	background-color: hsla(178, 100%, 50%, 0.5);
 }
 
 .svg-countdown {
-  width: 16px;
-  height: 16px;
+	width: 16px;
+	height: 16px;
 }
 
 .svg-currency {
-  width: 11px;
+	width: 11px;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  max-width: 350px;
-  background: var(--color-neutral-800);
-  border-radius: 15px;
-  margin-bottom: 1rem;
-  padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	max-width: 21.875rem;
+	background: var(--color-neutral-800);
+	border-radius: 15px;
+	margin-bottom: 1rem;
+	padding: 1.5rem;
 }
 
 section {
-  padding-top: 1.5rem;
+	padding-top: 1.5rem;
 }
 
 /* Typography */
 
 .title-artwork {
-  color: var(--color-white);
-  font-weight: 600;
-  font-size: 1.375rem;
-  margin-bottom: 0.75rem;
-  letter-spacing: 0.05em;
-  transition: color 0.5s ease-out;
+	color: var(--color-white);
+	font-weight: 600;
+	font-size: 1.375rem;
+	margin-bottom: 0.75rem;
+	letter-spacing: 0.05em;
+	transition: color 0.5s ease-out;
 }
 
 .numbers p,
 .artist-card p {
-  font-size: 0.9375rem;
+	font-size: 0.9375rem;
 }
 
 .nft-price {
-  color: var(--color-primary-400);
-  font-weight: 600;
+	color: var(--color-primary-400);
+	font-weight: 600;
 }
 
 .artist-name {
-  color: var(--color-white);
-  transition: color 0.5s ease-out;
+	color: var(--color-white);
+	transition: color 0.5s ease-out;
 }
 
 .title-artwork:hover,
 .artist-name:hover {
-  cursor: pointer;
-  color: var(--color-primary-400);
+	cursor: pointer;
+	color: var(--color-primary-400);
 }
 
 /* General Classes */
 
 .numbers-card {
-  display: flex;
-  justify-content: space-between;
-  margin: 0.75rem 0;
+	display: flex;
+	justify-content: space-between;
+	margin: 0.75rem 0;
 }
 
 .numbers {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 }
 
 hr {
-  border: 0.5px solid var(--color-neutral-500);
+	border: 0.5px solid var(--color-neutral-500);
 }
 
 .artist-img {
-  width: 33px;
-  height: 33px;
-  border: 1px solid var(--color-white);
-  border-radius: 100%;
+	width: 33px;
+	height: 33px;
+	border: 1px solid var(--color-white);
+	border-radius: 100%;
 }
 
 .artist-card {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin-top: 0.75rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin-top: 0.75rem;
 }
 
 /* Footer */
 .attribution {
-  font-size: 11px;
-  text-align: center;
-  color: var(--color-neutral-200);
+	font-size: 0.6875rem;
+	text-align: center;
+	color: var(--color-neutral-200);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+	color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 760px) {
-  .numbers p,
-  .artist-card p {
-    font-size: 1rem;
-  }
+@media only screen and (min-width: 47.5em) {
+	.numbers p,
+	.artist-card p {
+		font-size: 1rem;
+	}
 }

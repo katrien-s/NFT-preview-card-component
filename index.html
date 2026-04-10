@@ -1,79 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Frontend Mentor | NFT preview card component</title>
-  </head>
-  <body>
-    <main class="container">
-      <div class="image-container">
-        <img
-          src="/images/image-equilibrium.jpg"
-          class="img nft-img"
-          alt="Image of the artwork 'Equilibrium'"
-        />
-        <div class="overlay">
-        </div>
-      </div>
-      <section>
-        <article>
-          <h1 class="title-artwork">Equilibrium #3429</h1>
-          <p>Our Equilibrium collection promotes balance and calm.</p>
-        </article>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Frontend Mentor | NFT preview card component</title>
+	</head>
+	<body>
+		<main class="container">
+			<div class="image-container">
+				<img
+					src="/images/image-equilibrium.jpg"
+					class="img nft-img"
+					alt="Image of the artwork 'Equilibrium'"
+				/>
+				<div class="overlay"></div>
+			</div>
+			<section>
+				<article>
+					<h1 class="title-artwork">Equilibrium #3429</h1>
+					<p>Our Equilibrium collection promotes balance and calm.</p>
+				</article>
 
-        <div class="numbers-card">
-          <div class="numbers">
-            <img
-              src="/images/icon-ethereum.svg"
-              class="svg-currency"
-              alt="symbol of ethereum"
-            />
-            <p class="nft-price">0.041 ETH</p>
-          </div>
-          <div>
-            <div class="numbers">
-              <img
-                src="/images/icon-clock.svg"
-                class="svg-countdown"
-                alt="clock"
-              />
-              <p class="nft-auction">3 days left</p>
-            </div>
-          </div>
-        </div>
+				<div class="numbers-card">
+					<div class="numbers">
+						<img
+							src="/images/icon-ethereum.svg"
+							class="svg-currency"
+							alt="symbol of ethereum"
+						/>
+						<p class="nft-price">0.041 ETH</p>
+					</div>
+					<div>
+						<div class="numbers">
+							<img
+								src="/images/icon-clock.svg"
+								class="svg-countdown"
+								alt="clock"
+							/>
+							<p class="nft-auction">
+								<time datetime="P3D">3 days left</time>
+								<!-- ISO 8601 duration (P3D = period of 3 days) -->
+							</p>
+						</div>
+					</div>
+				</div>
 
-        <hr />
+				<hr />
 
-        <div class="artist-card">
-          <img
-            src="/images/image-avatar.png"
-            class="img artist-img"
-            alt="Portrait of the artist"
-          />
-          <p>Creation of <span class="artist-name">Jules Wyvern</span></p>
-        </div>
-      </section>
-    </main>
+				<div class="artist-card">
+					<img
+						src="/images/image-avatar.png"
+						class="img artist-img"
+						alt="Portrait of the artist"
+					/>
+					<p>Creation of <span class="artist-name">Jules Wyvern</span></p>
+				</div>
+			</section>
+		</main>
 
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Katrien S.</a>.
-    </footer>
-  </body>
+		<footer class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				rel="noopener"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Katrien S.</a>.
+		</footer>
+	</body>
 </html>
